@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For My Valentine ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PASSWORD PAGE -->
+<div class="password-page" id="passwordPage">
+    <h1>🔐 Secret Love Page</h1>
+    <p>Hint: Our special date 💖</p>
+
+    <input type="password" id="passwordInput" placeholder="Enter password">
+    <button onclick="checkPassword()">Unlock 💕</button>
+
+    <p id="errorMsg"></p>
+</div>
+
+<!-- START PAGE -->
+<div class="card hidden" id="mainPage">
+    <img src="cute.jpeg" alt="Love">
+    <h2 id="question">Do you love me Jomii? 💖</h2>
+
+    <div class="buttons">
+        <button id="yesBtn">Yes 😍</button>
+        <button id="noBtn">No 🙄</button>
+    </div>
+
+    <p id="message"></p>
+</div>
+
+<!-- FINAL PAGE -->
+<div class="final-page" id="finalPage">
+    <canvas id="fireworks"></canvas>
+
+    <h1>💖 Happy Valentine’s Day Almyy💖</h1>
+
+    <!-- WHATSAPP CHAT -->
+    <div class="chat">
+        <div class="msg left">Hey ❤️</div>
+        <div class="msg right">Hi 😊</div>
+        <div class="msg left">I have something important…</div>
+        <div class="msg right">Tell me 👀</div>
+        <div class="msg left">You are my favorite person 🥹</div>
+        <div class="msg right">🥺❤️</div>
+        <div class="msg left">Will you be mine forever? 💍</div>
+    </div>
+
+    <!-- SLIDESHOW -->
+    <div class="slideshow">
+        <img id="slideImg" src="photos/p1.jpg">
+    </div>
+
+    <p class="final-text">
+        My heart chose you,<br>
+        every single day ❤️
+    </p>
+
+    <button onclick="location.reload()">Replay 💕</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
